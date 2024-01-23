@@ -21,3 +21,11 @@
     }
     
 }
+
+@media (max-width: 500px){ /*Aqui vou colocar para o Menu-Hamburguer cobrir 100% da tela nos celulares*/
+
+    .Hamburguer{
+        width: 100%;
+    }
+
+}
