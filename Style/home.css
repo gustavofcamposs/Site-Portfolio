@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.Header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 8.5vh;
+    width: 100%;
+
+    background-color: #070D0D;
+    border-bottom: gray solid 1px;
+}
+
+.Perfil_Header{ /*Só quero que apareça nos Layout com o Menu Hamburguer*/
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    height: 90%;
+    width: auto;
+}
+
+.Perfil_Header h2{ /*Config da Fonte*/
+    color: white;
+    font-size: 14px;
+    margin-left: 12px;
+    margin-top: 12px; /*Para ficar na mesma Linha do Logo*/
+    font-family: CircularSp,spotify-circular,Helvetica,Arial,sans-serif;
+}
+
+
+
+/**/
+
+
+
+.List_Header{ /*Link do HOME, Meus Projetos e Contato*/
+    display: flex;
+    justify-content: center; /*Deixei Centralizado e com Margen Left no P*/
+    align-items: center;
+
+    height: 90%;
+    width: 90%;
+    list-style: none;
+}
+
+.List_Header a{ /*Somente o TEXT-decoration para não aparecer o Underline do LINK*/
+    text-decoration: none;
+}
+
+.List_Header P{
+    color: white;
+    font-size: 14px;
+    font-family: CircularSp,spotify-circular,Helvetica,Arial,sans-serif;
+
+}
+
+.List_Header li:not(:first-child){ /*Margen-Left não vai ser aplicado do primerio li*/ /*Home - Meus Projetos - Contato*/
+    /*Sem isso ele a lista não iria ficar 100% no centro por causa da margin, por isso apliquei o NOT FirtChild */
+    margin-left: 70px;
+}
+
+
+.List_Header p:hover{
+    color: #8F8CE7;
+}
+
+
+
+/**/
+
+
+
+.Container_Hamburguer{ /*Apenas para posicionar o menu Hamburguer */
+    display: none;
+    justify-content: flex-end;
+    position: absolute;
+
+    height: 91.5vh;
+    width: 100%;
+
+    transition: 2s;
+    transition-delay: 2s;
+}
+
+#burguer{ /*Icone Hamburguer*/
+    /*Fica None pois ele deve aparecer somente nos lAyout que contenha o Menu Hamburguer*/
+    display: none;
+    color: white;
+}
+
+
+.Hamburguer{ /*Menu-Hamburguer*/
+    /*Deve ficar no None pois se não ele vai aparecer automaticamente quando entrar no Layout do menu-Hambuguer*/
+    /*Sendo assim ele fica Invisível e o JavaScript vai "Chamar ele", fazendo ele ficar com o Display FLEX*/
+    display: none; 
+    height: 100%;
+    width: 55%;
+
+    background-color: #070D0D;
+}

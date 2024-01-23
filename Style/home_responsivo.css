@@ -1,0 +1,23 @@
+/*Responsividade do Menu H a m b u r g u e r*/
+
+@media (max-width: 650px) {
+
+
+    .Container_Hamburguer{ /*Container do MENU-Hamburguer - Por padrão ele está None*/
+        display: flex;
+    }
+
+    .List_Header{ 
+/*Essa Lista (HOME, MEUS PROJETOS E CONTATO) se torna none pois, ela vai aparecer somente dentro do Menu Hamburguer*/
+        display: none;
+    }
+
+    .Perfil_Header{
+        display: flex;
+    }
+
+    #burguer{ /*Flex para poder aparecer o Icone do Menu Hamburguer*/
+        display: flex;
+    }
+    
+}
