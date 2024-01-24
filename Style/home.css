@@ -101,7 +101,7 @@ p, h1, a, h2, h3{
     se não usar essa propriedade o site vai ser arrastado para baixo, fazendo uma "buraco"*/
 
 
-    height: 100vh;
+    height: 90vh;
     width: 100%;
 }
 
