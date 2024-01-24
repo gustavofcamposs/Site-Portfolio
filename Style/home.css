@@ -35,6 +35,10 @@ p, h1, a, h2, h3{
     color: #8F8CE7;
 }
 
+/*#Icone_ClickBurguer:active{
+    color: #8F8CE7;
+}*/
+
 
 
 .Container_Nav ul{
@@ -78,7 +82,7 @@ p, h1, a, h2, h3{
     color: #D8DCD6;
     font-weight: bold;
     font-size: 14px;
-    margin-top: 15px;
+    margin-top: 13px;
     margin-left: 5px;
 }
 
@@ -107,6 +111,13 @@ p, h1, a, h2, h3{
 
 .Header_Hamburguer{
     display: none; /*Para ele não aparecer quando der f5 na página*/ 
+    /*Deixei o Flex no @MEDIA para poder usar o Justify e Aling*/
+
+    /*justify-content: center;
+    align-items: center;
+    Não adianta usar, ele funciona da primeira caso eu deixei o Display flex no Media Screnn, mas quando ativado o JavaScript ele fica 
+    block ou none, e ambos anulam o Justify e Align.. Para resolver eu vou deixar o UL COM 100% de largura 
+    */ 
 
     height: 100%;
     width: 55%;
@@ -116,6 +127,38 @@ p, h1, a, h2, h3{
     background-color: #121212;
 }
 
+/*Estilizando o NAV dentro do Header_Hamburguer*/
+
+.Header_Hamburguer ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;  
+
+    list-style: none;
+    height: 40%;
+    width: 100%;
+
+    border: rebeccapurple solid 1px;
+    
+}
+
+.Header_Hamburguer ul p{
+    color: #D8DCD6;
+    font-size: 20px;
+}
+
+.Header_Hamburguer ul p:hover{
+    color: #8F8CE7;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+
+
+/**/
+
+
 
 .teste{
     height: 100vh;
@@ -123,5 +166,3 @@ p, h1, a, h2, h3{
 
     background-color: black;
 }
-
-/*bug*/
