@@ -138,9 +138,6 @@ p, h1, a, h2, h3{
     list-style: none;
     height: 40%;
     width: 100%;
-
-    border: rebeccapurple solid 1px;
-    
 }
 
 .Header_Hamburguer ul p{
