@@ -1,31 +1,28 @@
-/*Responsividade do Menu H a m b u r g u e r*/
+/*Menu H a m b u r g u e r*/
 
-@media (max-width: 650px) {
+/*Meno que 560px de largura eu vou transformar o Header "normal" para um Header Hamburguer que vai ser puxado Pelo JavaScript*/
+@media (max-width: 560px) {
 
-
-    .Container_Hamburguer{ /*Container do MENU-Hamburguer - Por padrão ele está None*/
-        display: flex;
+    .Container_Nav ul{ /*Home, Projects e Contato, vou deixar none pois essa NAV eu irei colocar dentro do Menu Hamburguer*/
+        display: none; /*Antes estava flex*/
     }
 
-    .List_Header{ 
-/*Essa Lista (HOME, MEUS PROJETOS E CONTATO) se torna none pois, ela vai aparecer somente dentro do Menu Hamburguer*/
-        display: none;
+    #Icone_ClickBurguer{ /*Flex para o Icone ficar visivel e poder ativar o Header_Hamburguer*/
+        display: flex; /*Antes estava none*/
     }
 
-    .Perfil_Header{
-        display: flex;
-    }
-
-    #burguer{ /*Flex para poder aparecer o Icone do Menu Hamburguer*/
-        display: flex;
-    }
-    
 }
 
-@media (max-width: 550px){ /*Aqui vou colocar para o Menu-Hamburguer cobrir 100% da tela nos celulares*/
+/*Apenas ajustando quanto o Menu Hamburguer deve ocupar nos dispositivos menores*/
 
-    .Hamburguer{
+@media (max-width: 460px) { /*cobrindo 65%*/
+    .Header_Hamburguer{
+        width: 65%;
+    }
+}
+
+@media (max-width: 395px) { /*Header Hamburguer vai cobrir 100%*/
+    .Header_Hamburguer{
         width: 100%;
     }
-
 }

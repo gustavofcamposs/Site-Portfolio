@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,27 @@
     <link rel="stylesheet" href="../Style/home.css">
     <link rel="stylesheet" href="../Style/home_responsivo.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Document</title>
+    <title>Portfolio</title>
 </head>
 <body>
     <header class="Header">
-        <div class="Perfil_Header">
-            <a href="https://www.linkedin.com/in/gustavo-furtado-705798212/" target="_blank"><img src="../Image/Linkedln.png" height="30px" width="30px"></a>
-            <h2>LinkedIn</h2>
+
+        <div class="Container_Nav">
+            <span id="Icone_ClickBurguer" class="material-icons" onclick="clickMenu()">menu</span>
+            <ul>
+                <li><p>Home</p></li>
+                <li><p>Projects</p></li>
+                <li><p>Contato</p></li>
+            </ul>
+            <div class="Rede_Social">
+                <a href="https://www.linkedin.com/in/gustavo-furtado-705798212/" target="_blank"><img src="../Image/LinkedIN.png" height="30px" width="30px" alt=""></a>
+                <p>LinkedIN</p>
+            </div>
         </div>
-        <ul class="List_Header">
-            <li><a href=""><p>Home</p></a></li>
-            <li><a href=""><p>Meus Projetos</p></a></li>
-            <li><a href=""><p>Contato</p></a></li>
-        </ul>
-        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span> 
+
     </header>
     <div class="Container_Hamburguer">
-        <header class="Hamburguer" id="Hamburguer"></header>
+        <div class="Header_Hamburguer" id="Header_Hamburguer"></div> <!--Necessário o ID pois é ele quem o JavaScript reconhece, o Js não puxa a Class.. e sim o ID-->
     </div>
     <div class="teste"></div>
 </body>

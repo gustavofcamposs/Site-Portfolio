@@ -1,7 +1,7 @@
 function clickMenu(){ 
-    if (Hamburguer.style.display == 'block'){ 
-        Hamburguer.style.display = 'none'
+    if (Header_Hamburguer.style.display == 'block'){ /*Necessário deixar o ID com o msm nome pois ele puxa o ID e não a cLASS*/
+        Header_Hamburguer.style.display = 'none'
     } else{
-        Hamburguer.style.display = 'block'
+        Header_Hamburguer.style.display = 'block'
     }
 }
