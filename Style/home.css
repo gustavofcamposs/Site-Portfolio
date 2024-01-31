@@ -157,21 +157,4 @@ p, h1, a, h2, h3{
 
 /**/
 
-.Background_Projetos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    height: 100vh;
-    width: 100%;
-
-    background-color: black;
-}
-
-.Container_Projetos{
-    height: 90%;
-    width: 80%;
-    background-color: #121212;
-}
-
-/*Cor para as box #FDFDFE*/
