@@ -16,6 +16,7 @@ p, h1, a, h2, h3{
     width: 100%;
 
     background-color: #121212;
+
 }
 
 
@@ -32,7 +33,7 @@ p, h1, a, h2, h3{
 #Icone_ClickBurguer{
      /*Esse Icone que ativa o Menu Hamburguer fica none até o layout max-width de 560px, após isso ele fica com o display Flex para que o Icone fica Visivel*/
     display: none;
-    color: #8F8CE7;
+    color: white;
 }
 
 /*#Icone_ClickBurguer:active{
@@ -57,13 +58,14 @@ p, h1, a, h2, h3{
 
 
 .Container_Nav ul p{ /*Configuração da FONTE do P, que está dentro do LI*/
-    color: #D8DCD6;
+    color: #FDFDFE; /*#D8DCD6*/ 
     font-size: 14px;
     font-weight: bold;
 }
 
+
 .Container_Nav ul p:hover{
-    color: #8F8CE7;
+    color: #D8DCD6;
 }
 
 .Container_Nav li:not(:first-child) { /*Aplicando o Margin Left aqui pois não quero que ele seja aplicado no primeiro p*/
@@ -79,7 +81,7 @@ p, h1, a, h2, h3{
 }
 
 .Rede_Social P{
-    color: #D8DCD6;
+    color: #FDFDFE;
     font-weight: bold;
     font-size: 14px;
     margin-top: 13px;
@@ -87,7 +89,7 @@ p, h1, a, h2, h3{
 }
 
 .Rede_Social p:hover{
-    color: #8F8CE7;
+    color: #D8DCD6  ;
 }
 
 
@@ -155,11 +157,21 @@ p, h1, a, h2, h3{
 
 /**/
 
+.Background_Projetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-
-.teste{
     height: 100vh;
     width: 100%;
 
     background-color: black;
 }
+
+.Container_Projetos{
+    height: 90%;
+    width: 80%;
+    background-color: #121212;
+}
+
+/*Cor para as box #FDFDFE*/
